@@ -106,7 +106,73 @@ as.logical("apple")
 Expected output
 > TRUE
 > TRUE
->TRUE
+> TRUE
 > FALSE
 > NA
 ```
+
+## Data Structures
+
+> What are the different type of data Structures
+
+### Vector
+
+Vectors are `one-dimensional datatypes`, used to `store multiple items` of the same type in a single object
+
+![Vectors](./imgs/vectors.png)
+
+### Matrix
+Matrix is a `two dimensional data type`, where the data is arranged in the `form or rows and columns`.
+
+All items in the matrix (across column as well) should be of the same data type.
+
+![Matrix](./imgs/Matrix.png)
+
+### Dataframe
+
+Like matrix, a `data.frame` is also a two dimensional data type, where the data is arranged in the form of rows and columns.
+
+But unlike matrix, the `columns can be of different data types`
+
+The main difference between a matrix and the dataframes, that dataframes can contain columns of different data types, unlike matrix.
+
+Most common data structure in real life R projects.
+
+
+So in this example, you have the first column, which is a character data type, second column is numeric data tyype 
+
+![dataframe](./imgs/dataframes.png)
+
+### List
+List is used to store unstructured data.
+
+Like data.frame, list can store data of different data types.
+
+But unlike, data.frame, the data is not in form of rows and columns.
+
+Alist can even contain one or more data.frames inside it.
+
+While in matrix and data frames, all the columns is expected to have the same number of rows, but in a list you can put literally anything inside a list, you can even put a matrix, vector and another list in a list 
+
+![list](./imgs/list.png)
+
+> Summary
+![data structures](./imgs/all_data_structures.png)
+
+These are the four main data structes in R which comes in default. In addtion to these, there are more data structures such as `Time series`, which comes in a deep subject and various authors of packages tend to create their own data structures as well.
+
+We will see a few packages like taht in the discourse such as `dplyr`, `ggplot`. All this packages provides their own Data structures.
+
+> Homogenous vs Non-homogenous structures
+Amongst these data structures are classified as `homogenous` and `heterogeneous` based on the mixture of data they're stored in.
+
+`Homogenous` data struture will contain data, of only one type. For example Vectors and matrix
+
+`Heterogenous` data structure will contain data of more than one type. For example list and Datafrmae
+
+![homo_hetero](./imgs/homo_hetero.png)
+
+
+
+
+
