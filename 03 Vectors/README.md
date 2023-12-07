@@ -42,6 +42,75 @@ This process of doing repetitive operation without using an explicit loop is cal
 So in a programming language like R, if you just multiply these two objects, that is `months` and `wagePerMonth`, it will automatically compute the `totalWage` of each of these items in these two vectors.
 
 
+## Case Study Online Pizza Advertisement
+
+> Online Pizza Co. Case Problem
+
+In this section, we will look at the case problem for the onlien pizza company. The inputs on the data fields associated with the case and the hight level solution approach for the entire section.
+
+So there is a compmay that sells pizza online. Their business model is customers go online and place orders for their pizza.
+
+The dealerships of the company prepare the pizzas and fulfill the orders that are coming in. 
+
+Now the company want to increate their revenue by running discounts on particularly. dishes. For that, they want your help to recommend them an optimal ad strategy.
+
+> Online Pizza Co. wants you to analyse the sales data for 28 days and provide them with the following insights:
+
+* The `impact or revenue increase` by adding an extra shift every 4th day of the week.
+
+* `Recommend advertisement strategy`: Ad-promotion campaign for Tue and Fri (@40% increase in clicks) OR package for Mon-Wed-Sat (@25% increase in clicks)?
+
+The company is contemplating two different strategies, one that gives 40% increase in number of projects and another that gives 25% increase the number of clicks.
+
+Amongst these, you need to recommend the optimal one.
+
+### Company inputs
+
+> So the input that is available to us is designed in such a way that you are able to cover all the aspects of working with vectors so that by the end of this, you should be completely comfortable working on any concept or aspects of vectors itself for the input available to us.
+
+* `Sales data` is availabel with the company in hard copy only.
+
+* First day sales is 100 units, and has incread daily by 2 unit.
+
+* Analysis to be done for `28 days for September`
+
+* `Price of pizza` is $5
+
+* On every 4th day, company provides `discount of 40%` on this price.
+
+* Number of `daily visitors` who visit their website are between 1000 to 1100.
+
+* Company will provide the `click data` to you.
+
+
+### High Level Solution Approach
+
+> Now, the high level solution approaches, the first phase, we will be working on operation related to creating data, next on transforming or manipulating the data. And Finally, on analyzing the data.
+
+
+* `CREATE` - sales data, discount data, days, visitors
+
+* `TRANSFORM` - Visitor data, missing values from `clicks` data
+
+* `ANALYZE` - Total revenue for different scenarios
+
+
+
+> UP NEXT: From the next one onwards, we ill start working on the programming language itself.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
