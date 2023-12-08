@@ -98,10 +98,119 @@ Amongst these, you need to recommend the optimal one.
 
 > UP NEXT: From the next one onwards, we ill start working on the programming language itself.
 
+## Create Vector with a single element
+
+
+In order to work in the R programming language, you need to know some very basic operations, things such as how to `clear screen`, `create a vector`, how to see what other items are present in the R console, these kind of things are very essential.
+
+![create single](./imgs/create_single.png)
+
+In this section, we will see all of these aspects and also see how to create a vector that contains only one element.
+
+We are entering the `create` phase of this case problem. The data that you will create in this phase will be used in the `transform` and the `analyze` phase as well.
+
+Here's some of the data that will will be creating. But for this section, we will focus on creating only one ddy worth of data.
+
+![single_data](./imgs/single_data.png)
+
+This translates as vectors with only one element in it.
 
 
 
+### Variable
 
+```
+# HOW TO CREATE A SINGLE ELEMENT VECTOR ----
+
+# 1. Create data for a day's sales activity ----
+month <- "Sep_2019" # create month vector
+month = "sep_2019"
+month
+
+# 2. see what variables are present in global namespace ----
+ls() # check all the variables
+rm(month) # remove the month variable fro varialble list
+ls()
+
+# clear the scenes
+cat('\14') # auto clear screen periodically
+
+# 3. Arrow in opposite direction also works
+"Sep_2029" -> month
+month
+
+```
+
+### Numeric vs Integer
+
+```
+# 4. Check class and length ----
+class(month) # character class, other -> Interger, Numeric, Boolen Vector
+length(month) # 1
+
+# 5. create day of month ----
+day_of_month  <- 1.0 # create date numeric vector
+class(day_of_month) # Numeric class
+
+# store as integer
+day_of_month <- 1L
+class(day_of_month) #integer
+
+```
+
+### Change class of vector
+
+Now it is possible to convert any number to a character. 
+
+What I mean by that is it is possible to convert a number a 1000 to a character by just adding double quotes around it.
+
+While it may not be possible to convert any charater to a number. For example, if you want to convert, the string apple to a number of people, there is no equivalent to it.
+
+So to enable this conversion of a number to a character that is a function called `as.character()`
+
+It is possible to convert back to numeric using the equivalent as `as.numeric()`
+
+```
+# 6. change to character ----
+day_of_month <- as.character(day_of_month) #change class to character
+day_of_month # "1"
+class(day_of_month) # character
+
+# 7. change back
+day_of_month <- as.numeric(day_of_month) # change back class to numeric
+day_of_month # 1
+class(day_of_month) #numeric
+
+```
+
+Now, variables are case sensitive, what I mean by that, we have a variable `Day_Of_month`, Now, these two variables `Day_of_Month` and `day_of_month` event through they spell the same.
+
+
+The reason that this is an important distiniction is because people coming from `SQL` or `SAS` background might tend to use the capital case and the small case of a variable alternatively, that will not work, because these two are completely different.
+
+```
+# 8. case sensitive
+Day_of_Month <- 10 # variable are case sensitive
+Day_of_month
+day_of_month
+```
+
+## Mini Challenge
+
+
+Create a vector for to enter the year value as 2021 and change to character.
+
+```
+# 9. Mini Challenge
+year <- 2021L
+year # 2021
+class(year) # integer
+
+year_char <- as.character(year) # change integer to character
+year_char # "2021"
+class(year_char) #character
+
+```
 
 
 
